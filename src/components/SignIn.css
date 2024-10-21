@@ -1,0 +1,81 @@
+/* Container to center the form */
+.signin-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f5;
+}
+
+/* Sign-in card */
+.signin-card {
+  width: 500px;
+  padding: 40px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+h2 {
+  font-size: 30px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input, textarea {
+  margin-bottom: 15px;
+  padding: 15px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+textarea {
+  height: 100px;
+  resize: none;
+}
+
+input:focus, textarea:focus {
+  border-color: #2e86de;
+  outline: none;
+  box-shadow: 0 0 8px rgba(46, 134, 222, 0.3);
+}
+
+/* Button styling */
+button {
+  padding: 15px;
+  font-size: 18px;
+  color: #fff;
+  background-color: #2e86de;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #1b4f92;
+}
+
+/* Media query for responsive design */
+@media (max-width: 768px) {
+  .signin-card {
+    width: 90%;
+    padding: 20px;
+  }
+
+  input, textarea {
+    font-size: 14px;
+    padding: 12px;
+  }
+
+  button {
+    font-size: 16px;
+  }
+}

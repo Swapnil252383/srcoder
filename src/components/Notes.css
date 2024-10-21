@@ -1,0 +1,132 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f7f7f7;
+}
+
+.notes-page {
+  padding: 50px;
+  text-align: center;
+}
+
+.title {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 40px;
+}
+
+.notes-grid {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.note-card {
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 250px;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.note-card:hover {
+  transform: translateY(-10px);
+}
+
+.icon {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 20px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.python {
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg');
+}
+
+.c {
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/1/19/C_Logo.png');
+}
+
+.android {
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/d/d7/Android_robot.svg');
+}
+
+.java {
+  background-image: url('https://upload.wikimedia.org/wikipedia/en/3/30/Java_programming_language_logo.svg');
+}
+
+/* Added icons for React.js, Git & GitHub, and Flutter */
+.react {
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg');
+}
+
+.git {
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/3/3f/Git_icon.svg');
+}
+
+.flutter {
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/1/17/Google-flutter-logo.png');
+}
+
+h3 {
+  font-size: 1.25rem;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+/* Button styling */
+.btn {
+  background: linear-gradient(45deg, #6a1b9a, #c2185b);
+  color: white;
+  padding: 12px 20px;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 1rem;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  border: none;
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 300%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.2);
+  transition: all 0.5s ease;
+}
+
+.btn:hover::before {
+  left: 100%;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  background: linear-gradient(45deg, #ab47bc, #e91e63);
+}
+
+@media (max-width: 768px) {
+  .notes-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .note-card {
+    width: 100%;
+    max-width: 400px;
+  }
+}
